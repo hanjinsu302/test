@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습1:기본 선택자 연습하기</title>
+    <style>
+        *{
+            /* 색깔 지정 방법
+            1.색깔 이름을 써주기
+            2.rgb( , , ): ->0~255까지의 수 작성 
+              rgb(255,255,255); -> white
+              3.#~~~~~~~~: 16진수로 이루어진 3개의 술르 연달아서 써주면 됨*/
+            color: white;
+            background-color: gray;
+        }
+        /*브라우저 배경색은 body태그에 적용 해도 가능 stlye 태그로 이동 하여서*/
+
+        span {
+            background-color: red;
+        }
+
+        #first{ /* 아이디 선택자*/
+            background-color: blue;
+        }
+
+        .second{ /*클래스 선택자*/
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> 기본 선택자 연습 해보기</h1>
+    <p>기본선택자 연습을 해보아요!</p>
+    <span>안녕하세요</span>
+    <ol>
+        <li id="first">1</li>
+        <li class="second">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    
+</body>
+</html>

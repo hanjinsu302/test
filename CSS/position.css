@@ -1,0 +1,171 @@
+/*
+body{
+    height: 2000px;
+    background: linear-gradient(rgb());
+}
+div {
+    width: 100px;
+    height: 100px;
+    font-weight: 700;
+    text-align:  center;
+    line-height: 100px;
+}
+
+.position-static{
+    background-color: pink;
+    position: static;
+    top: 100px;
+    left: 50px;
+}
+.position-relative{
+    background-color: aqua;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.position-absolute{
+    background-color: brown;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+.position-fixed{
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.position-relative{
+    background-color: blueviolet;
+
+}*/
+
+/*
+.contaniner {
+    background-color: orangered;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.container-item1{
+    background-color: antiquewhite;
+    position: static;
+    left: 50px;
+    top: 30px;
+
+}
+.container-item2{
+    background-color: aquamarine;
+    position: absolute;
+    right: 30px;
+    bottom: 100px; 
+}
+.container-item3{
+    background-color: bisque;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+}
+*/
+
+
+/*
+.parent {
+    position: relative;
+    }
+    .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    }
+    .circle1 {
+    background-color: #9afaff;
+    top: 0;
+    left: 200px;
+    }
+    .circle2 {
+    background-color: #84ff8d;
+    top: 0;
+    left: 150px;
+    }
+    .circle3 {
+    background-color: #ffeb88;
+    top: 0;
+    left: 100px;
+    z-index: 5;
+    }
+    .circle4 {
+    background-color: #ffb680;
+    top: 0;
+    left: 50px;
+    z-index: 4;
+    }
+    .circle5 {
+    top: 0;
+    left: 0;
+    background-color: rgb(220, 66, 39);
+    }*/
+
+.com{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        /*background:linear-gradient(gray, red, yellow);*/
+        background-image: url("./img/pooh_720.png");
+        background-size: 150px 150px;
+        background-position: 250px 280px;
+        background-repeat: no-repeat;
+        
+    }
+    .con {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius:30%;
+    }
+    .item1 {
+        background-color: red;
+        z-index: 7;
+        
+    }
+    .item2 {
+        background-color: orange;
+        top: 30px;
+        left: 30px;
+        z-index: 6;
+    }
+    .item3 {
+        background-color: yellow;
+        top: 60px;
+        left: 60px;
+        z-index: 5;
+    }
+    .item4 {
+        background-color: green;
+        top: 90px;
+        left: 90px;
+        z-index: 4;
+    }
+    .item5 {
+        background-color: blue;
+        top: 120px;
+        left: 120px;
+        z-index: 3;
+    }
+    .item6 {
+        background-color: navy;
+        top: 150px;
+        left: 150px;
+        z-index: 2;
+    }
+    .item7 {
+        background-color: blueviolet;
+        top: 180px;
+        left: 180px;
+        z-index: 1;
+    }
+    

@@ -1,0 +1,42 @@
+body{
+    height: 1000px;
+}
+.box {
+    display: inline-block;
+    border: 1px solid black;
+    width: 800px;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: skyblue;
+}
+.background {
+    background-color: aqua;
+    background: palegreen;
+    background: linear-gradient(black,blue);
+
+}
+.background-image {
+    background-image:url(./img/small_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    background-attachment: fixed;
+}
+.background-item1{
+    background-image: url(./img/small_img.png);
+    background-position: center;
+    background-repeat: repeat-x;
+
+    
+}
+.background-item2 {
+    background-color: red;
+    
+
+    
+    
+}
+.background-item3 {
+    
+}

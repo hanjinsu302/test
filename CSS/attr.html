@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 기본 속성</title>
+    <link rel="stylesheet" href="./attr.css">
+    <style>
+        .orenge {
+            background-color: orange;
+            height: 200px;
+            
+        }
+        .orenge>div {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            margin-right: 30px;
+        }
+        .orenge > div:first-child {
+            background-color: skyblue;
+        }
+        .orenge>div:nth-child(2) {
+            background-color: green;
+        }
+        
+        .orenge>div:nth-child(3) {
+      background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>디스플레이 속성</h2>
+
+    <div class="d-block">bloock1</div>
+    <div class="d-block">bloock2</div>
+    <div class="d-block">bloock3</div>
+    <div class="d-block">bloock4</div>
+    <br/> <br/>
+
+    <span class="d-inline">inline1</span>
+    <span class="d-inline">inline2</span>
+    <span class="d-inline">inline3</span>
+    <span class="d-inline">inline4</span>
+    <br/> <br/>
+
+    <span class="d-line-block">inline-block1</span>
+    <span class="d-line-block">inline-block2</span>
+    <span class="d-line-block">inline-block3</span>
+
+
+    <div class="orenge">
+        <div>html</div>
+        <div>css</div>
+        <div>java</div>
+    </div>
+
+
+
+    <hr />
+    <h2>max-width,min-widht</h2>
+    <div class="parent">
+        <div class="min">min-width</div>
+        <div class="max">max-width</div>
+    </div>
+
+    <h2>단위</h2>
+    <div class="box box-px"></div>
+    <div class="box box-view"></div>
+    <div class="box box-per"></div>
+    <div class="rem">rem
+        <div class="rem">rem
+            <div class="rem">rem</div>
+        </div>
+    </div>
+
+    <div class="em">em
+        <div class="em">em
+            <div class="em">em</div>
+        </div>
+    </div>
+
+    <hr/>
+
+    <h2>border, border</h2>
+    <div class="square border"></div>
+    <div class="square rounded"></div>
+
+    <hr/>
+
+    <h2>실습</h2>
+    <div class="Border-width"></div>
+    <div class="Border-style"></div>
+    <div class="Border-color"></div>
+    <div class="Border-men"></div>
+
+
+
+    <hr/>
+
+    <h2>box sizing</h2>
+
+    <div class="sqaure box-sizing content=box">box1</div>
+    <div class="sqaure box-sizing border-box">box2</div>
+
+    <hr/>
+
+    
+
+
+</body>
+
+    
+</html>

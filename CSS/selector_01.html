@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자1: 기본 선택자</title>
+    <style>
+        /**전제 선택자**/
+        * {
+            color: gray;
+        }
+
+        /*태그 선택자*/
+        li {
+            background-color: aqua;
+            color: blue;
+        }
+
+        h3 {
+            background-color: black;
+            color: white;
+            text-align: center; /*글자 위치*/
+            letter-spacing: 10px; /*글자 사이 간격*/
+        }
+
+        /*클래스 선택자*/
+        .small{
+            background-color: pink;
+        }
+
+        .big{
+            background-color: orange;
+        }
+
+        .test1{
+            background-color: blueviolet;
+        }
+
+        /*아이디 선택자*/
+        #test{
+            background-color: aquamarine;
+        }    /*아이디 선택자가 전체 선택자를 이김*/
+
+
+        /*선택자 우선 순위: tag < class < id */
+        /*전체 선택자: 우선 순위가 가장 낮음*/
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="small">쥐</li>
+        <li class="big">소 </li>
+        <li class="big">호랑이</li>
+        <li class="small">토끼</li>
+
+    </ul>    
+
+        <h3>어흥어흥</h3>
+        <p id="test" calss="test1">ptag</p>
+
+
+    
+    
+</body>
+</html>
