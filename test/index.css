@@ -1,0 +1,324 @@
+html,
+body {
+  margin: 0;
+
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+}
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section02 {
+  background: white;
+}
+.section03 {
+  background: white;
+}
+.section04 {
+  background: white;
+}
+.section05 {
+  background: white;
+}
+.section06 {
+  background: white;
+}
+.section07 {
+  background: white;
+}
+.section08 {
+  background: white;
+}
+
+/* 마지막 링크 기능 코드*/
+.contaniner {
+  position: relative;
+  display: flex;
+  padding: 80px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.card {
+  position: relative;
+  width: 350px;
+  height: 180px;
+  background-color: white;
+  transition: 0.5s;
+}
+.card:hover {
+  height: 450px;
+}
+.card .lines {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.card .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(
+    transparent,
+    #f0202a,
+    #f0202a,
+    #f0202a,
+    transparent
+  );
+  animation: animate 2s linear infinite;
+  animation-play-state: paused;
+}
+.card:hover .lines::before {
+  animation-play-state: running;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.card .lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: rgb(255, 254, 254);
+}
+.card .imgBx {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateX(-50%);
+  background-color: white;
+  transition: 0.5s;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover .imgBx {
+  top: 25px;
+  width: 250px;
+  height: 250px;
+}
+.card .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    transparent,
+    rgb(41, 41, 243),
+    rgb(41, 41, 243),
+    rgb(41, 41, 243),
+    transparent
+  );
+  animation: animate2 2s linear infinite;
+  animation-play-state: paused;
+}
+.card:hover .imgBx::before {
+  animation-play-state: running;
+}
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+.card .imgBx::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: black;
+}
+.card .imgBx img {
+  position: absolute;
+  z-index: 1;
+  filter: invert(1);
+  opacity: 0.5s;
+  transition: 0.5s;
+}
+.card:hover .imgBx img {
+  opacity: 1;
+}
+.card .content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.card .contnet .details {
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY();
+}
+.card:hover .card .content .details {
+  transform: translateY(0px);
+}
+.card .content .details h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+  line-height: 1.2em;
+}
+.card .content .details p {
+  color: gray;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .content .details p {
+  opacity: 1;
+}
+.card .content .details a {
+  display: inline-block;
+  padding: 8px 15px;
+  color: black;
+  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .content .details p,
+.card:hover .content .details a {
+  opacity: 1;
+}
+/* 링크 기능 코드 끝*/
+
+/*목록 차트 기능 코드*/
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  background-color: #3e3f46;
+  padding: 15px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+ul li:hover {
+  background-color: #33a3ee;
+  transform: translateX(-50px);
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: blue;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+ul li:hover::before {
+  background-color: #1f5378;
+}
+ul li::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+ul li:hover::after {
+  background-color: #2982b9;
+}
+ul li a {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+ul li:hover a {
+  color: white;
+}
+ul li:last-child::after {
+  box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.5);
+}
+/*목록 차트 기능 코드 끝*/
+
+/*첫번째 페이지 글자*/
+/*.hello {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  top: 30%;
+  font-size: 200px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.waviy {
+  position: absolute;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 100px;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 40%;
+}
+.waviy span {
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}*/

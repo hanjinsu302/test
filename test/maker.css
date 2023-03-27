@@ -1,0 +1,110 @@
+html {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #222;
+  color: gray;
+  text-align: center;
+  font-family: sans-serif;
+}
+body:before {
+  content: "CODING ON X POSCO: FourMen";
+  font-size: 50px;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+div {
+  width: 20vw;
+  max-width: 250px;
+  height: 75vh;
+  background: red;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 0.5rem;
+  filter: grayscale(1) opacity(0.1) contrast(200%);
+  transition: 0.5s;
+  transform: skewY(-10deg);
+  z-index: -1;
+}
+
+.highlight {
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.1);
+  box-shadow: 0 25px 50px black;
+  z-index: 100;
+}
+
+@media (orientation: portrait) {
+  body:before {
+    content: "Up/Down arrows to move";
+  }
+
+  div {
+    width: 75vw;
+    max-width: 75vw;
+    height: 20vh;
+    display: block;
+    margin: 1rem 0;
+    background-size: 100% auto;
+    background-position: 50% 0%;
+    transform: skewX(-10deg);
+  }
+  div:nth-child(1) {
+    background-position: 50% 10%;
+  }
+  div:nth-child(3) {
+    background-position: 50% 20%;
+  }
+  div:nth-child(4) {
+    background-position: 50% 10%;
+  }
+}
+
+div:nth-child(1) {
+  background-color: dodgerblue;
+  background-image: url(./images/724.jpg);
+}
+
+div:nth-child(2) {
+  background-color: red;
+  background-image: url(./images/720.jpg);
+}
+div:nth-child(3) {
+  background-color: purple;
+  background-image: url(./images/709.jpg);
+}
+div:nth-child(4) {
+  background-color: darkorange;
+  background-image: url(./images/714.jpg);
+}
+
+div:nth-child(1):after,
+div:nth-child(2):after,
+div:nth-child(3):after,
+div:nth-child(4):after {
+  content: "NAME";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 3px 3px #555;
+}
+div:nth-child(1):after {
+  content: "윤창훈";
+}
+div:nth-child(2):after {
+  content: "정성윤";
+}
+div:nth-child(3):after {
+  content: "홍준범";
+}
+div:nth-child(4):after {
+  content: "한진수";
+}
